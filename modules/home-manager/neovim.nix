@@ -23,6 +23,7 @@ in
       plugins = [
         {
           plugin = config.catppuccin.sources.nvim;
+          type = "lua";
           config = ''
             lua << EOF
               local compile_path = vim.fn.stdpath("cache") .. "/catppuccin-nvim"
